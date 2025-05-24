@@ -1,0 +1,1 @@
+it's a land registry website where we an search land details about person or whole group of peoples, mya acts and rules are also added here, also you can search land available in the particular state, (need many changest yet)
