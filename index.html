@@ -163,13 +163,16 @@
                 <button class="font-btn medium active" title="Medium font">A</button>
                 <button class="font-btn large" title="Large font">A</button>
             </div>
-            <div class="language-selector">
+            <div id="google_translate_element"></div>
+            <!-- <div class="language-selector">
                 <select>
                     <option>English</option>
-                    <option>हिंदी</option>
+                    <option>हिंदी</option>  
+                    <option>मराठी</option>
+                    <option>বাংলা</option>
                     <option>Other Languages</option>
                 </select>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -656,7 +659,18 @@
 
     <script src="script.js"></script>
     <script src="simple-search.js"></script>
+    <script src="translated-multilingual-partial.json"></script>
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        } 
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
